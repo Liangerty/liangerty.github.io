@@ -138,36 +138,36 @@ $$
 
 直角坐标系下的N-S方程组为
 $$
-\frac{\partial\bold{Q}}{\partial t}+\frac{\partial\bold{f}_c}{\partial x}+\frac{\partial\bold{g}_c}{\partial y}+\frac{\partial\bold{h}_c}{\partial z}=\frac{\partial\bold{f}_v}{\partial x}+\frac{\partial\bold{g}_v}{\partial y}+\frac{\partial\bold{h}_v}{\partial z}+\bold{S}
+\frac{\partial\boldsymbol{Q}}{\partial t}+\frac{\partial\boldsymbol{f}_c}{\partial x}+\frac{\partial\boldsymbol{g}_c}{\partial y}+\frac{\partial\boldsymbol{h}_c}{\partial z}=\frac{\partial\boldsymbol{f}_v}{\partial x}+\frac{\partial\boldsymbol{g}_v}{\partial y}+\frac{\partial\boldsymbol{h}_v}{\partial z}+\boldsymbol{S}
 $$
 式中：
 
 $$
-\bold{Q}=\left[\begin{array}{c}
+\boldsymbol{Q}=\left[\begin{array}{c}
 \rho \\\rho u\\\rho v\\\rho w\\\rho E\end{array}
 \right],\qquad E=e+\frac12(u^2+v^2+w^2)
 $$
 
 $$
-\bold{f}_c=\left[\begin{array}{c}
+\boldsymbol{f}_c=\left[\begin{array}{c}
 \rho u\\\rho u^2+p\\\rho uv\\\rho uw\\(\rho E+p)u
 \end{array}\right],\quad
-\bold{g}_c=\left[\begin{array}{c}
+\boldsymbol{g}_c=\left[\begin{array}{c}
 \rho v\\\rho v^2\\\rho v^2+p\\\rho vw\\(\rho E+p)v
 \end{array}\right],\quad
-\bold{h}_c=\left[\begin{array}{c}
+\boldsymbol{h}_c=\left[\begin{array}{c}
 \rho w\\\rho uw\\\rho vw\\\rho w^2+p\\(\rho E+p)w
 \end{array}\right]
 $$
 
 $$
-\bold{f}_v=\left[\begin{array}{c}
+\boldsymbol{f}_v=\left[\begin{array}{c}
 0\\\tau_{xx}\\\tau_{xy}\\\tau_{xz}\\b_x
 \end{array}\right],\quad
-\bold{g}_v=\left[\begin{array}{c}
+\boldsymbol{g}_v=\left[\begin{array}{c}
 0\\\tau_{xy}\\\tau_{yy}\\\tau_{yz}\\b_y
 \end{array}\right],\quad
-\bold{h}_v=\left[\begin{array}{c}
+\boldsymbol{h}_v=\left[\begin{array}{c}
 0\\\tau_{xz}\\\tau_{yz}\\\tau_{zz}\\b_z
 \end{array}\right]
 $$
@@ -206,7 +206,7 @@ $$
 
 将变量无量纲化后，得到的无量纲形式控制方程为
 $$
-\frac{\partial\bold{Q}}{\partial t}+\frac{\partial\bold{f}_c}{\partial x}+\frac{\partial\bold{g}_c}{\partial y}+\frac{\partial\bold{h}_c}{\partial z}=\frac1{Re_{ref}}(\frac{\partial\bold{f}_v}{\partial x}+\frac{\partial\bold{g}_v}{\partial y}+\frac{\partial\bold{h}_v}{\partial z})+\bold{S}
+\frac{\partial\boldsymbol{Q}}{\partial t}+\frac{\partial\boldsymbol{f}_c}{\partial x}+\frac{\partial\boldsymbol{g}_c}{\partial y}+\frac{\partial\boldsymbol{h}_c}{\partial z}=\frac1{Re_{ref}}(\frac{\partial\boldsymbol{f}_v}{\partial x}+\frac{\partial\boldsymbol{g}_v}{\partial y}+\frac{\partial\boldsymbol{h}_v}{\partial z})+\boldsymbol{S}
 $$
 式中各项的表达形式相比有量纲形式毫无改变，只是都替换为了相应的无量纲变量，差别在于无量纲方程在扩散项前有参考雷诺数
 $$
@@ -221,11 +221,11 @@ $$
 
 方程形式为
 $$
-\frac{\partial\hat{\bold{Q}}}{\partial\tau}+\frac{\partial\hat{\bold{F}}_c}{\partial\xi}+\frac{\partial\hat{\bold{G}}_c}{\partial\eta}+\frac{\partial\hat{\bold{H}}_c}{\partial\zeta}=\frac1{Re_{ref}}(\frac{\partial\hat{\bold{F}}_v}{\partial\xi}+\frac{\partial\hat{\bold{G}}_v}{\partial\eta}+\frac{\partial\hat{\bold{H}}_v}{\partial\zeta})+\hat{\bold{S}}
+\frac{\partial\hat{\boldsymbol{Q}}}{\partial\tau}+\frac{\partial\hat{\boldsymbol{F}}_c}{\partial\xi}+\frac{\partial\hat{\boldsymbol{G}}_c}{\partial\eta}+\frac{\partial\hat{\boldsymbol{H}}_c}{\partial\zeta}=\frac1{Re_{ref}}(\frac{\partial\hat{\boldsymbol{F}}_v}{\partial\xi}+\frac{\partial\hat{\boldsymbol{G}}_v}{\partial\eta}+\frac{\partial\hat{\boldsymbol{H}}_v}{\partial\zeta})+\hat{\boldsymbol{S}}
 $$
 式中各项与原变量关系如下：
 $$
-\hat{\bold{Q}}=\bold{JQ}\quad \hat{\bold{S}}=\bold{JS}
+\hat{\boldsymbol{Q}}=\boldsymbol{JQ}\quad \hat{\boldsymbol{S}}=\boldsymbol{JS}
 $$
 逆变速度$U,V,W$定义如下：
 
@@ -239,32 +239,32 @@ $$
 
 通量项定义如下：
 $$
-\hat{\bold{F}}_c=\bold{J}(\xi_x\bold{f}_c+\xi_y\bold{g}_c+\xi_z\bold{h}_c+\xi_t\bold{Q})=\bold{J}\left[\begin{array}{c}\rho U\\\rho uU+p\xi_x\\\rho vU+p\xi_y\\\rho wU+p\xi_z\\(\rho E+p)U-p\xi_t
+\hat{\boldsymbol{F}}_c=\boldsymbol{J}(\xi_x\boldsymbol{f}_c+\xi_y\boldsymbol{g}_c+\xi_z\boldsymbol{h}_c+\xi_t\boldsymbol{Q})=\boldsymbol{J}\left[\begin{array}{c}\rho U\\\rho uU+p\xi_x\\\rho vU+p\xi_y\\\rho wU+p\xi_z\\(\rho E+p)U-p\xi_t
 \end{array}\right]
 $$
 
 $$
-\hat{\bold{F}}_v=\bold{J}(\xi_x\bold{f}_v+\xi_y\bold{g}_v+\xi_z\bold{h}_v)=\bold{J}\left[\begin{array}{c}0\\\xi_x\tau_{xx}+\xi_y\tau_{xy}+\xi_z\tau_{xz}\\\xi_x\tau_{xy}+\xi_y\tau_{yy}+\xi_z\tau_{yz}\\\xi_x\tau_{xz}+\xi_y\tau_{yz}+\xi_z\tau_{zz}\\\xi_xb_x+\xi_yb_y+\xi_zb_z
+\hat{\boldsymbol{F}}_v=\boldsymbol{J}(\xi_x\boldsymbol{f}_v+\xi_y\boldsymbol{g}_v+\xi_z\boldsymbol{h}_v)=\boldsymbol{J}\left[\begin{array}{c}0\\\xi_x\tau_{xx}+\xi_y\tau_{xy}+\xi_z\tau_{xz}\\\xi_x\tau_{xy}+\xi_y\tau_{yy}+\xi_z\tau_{yz}\\\xi_x\tau_{xz}+\xi_y\tau_{yz}+\xi_z\tau_{zz}\\\xi_xb_x+\xi_yb_y+\xi_zb_z
 \end{array}\right]
 $$
 
 $$
-\hat{\bold{G}}_c=\bold{J}(\eta_x\bold{f}_c+\eta_y\bold{g}_c+\eta_z\bold{h}_c+\eta_t\bold{Q})=\bold{J}\left[\begin{array}{c}\rho V\\\rho uV+p\eta_x\\\rho vV+p\eta_y\\\rho wV+p\eta_z\\(\rho E+p)V-p\eta_t
+\hat{\boldsymbol{G}}_c=\boldsymbol{J}(\eta_x\boldsymbol{f}_c+\eta_y\boldsymbol{g}_c+\eta_z\boldsymbol{h}_c+\eta_t\boldsymbol{Q})=\boldsymbol{J}\left[\begin{array}{c}\rho V\\\rho uV+p\eta_x\\\rho vV+p\eta_y\\\rho wV+p\eta_z\\(\rho E+p)V-p\eta_t
 \end{array}\right]
 $$
 
 $$
-\hat{\bold{G}}_v=\bold{J}(\eta_x\bold{f}_v+\eta_y\bold{g}_v+\eta_z\bold{h}_v)=\bold{J}\left[\begin{array}{c}0\\\eta_x\tau_{xx}+\eta_y\tau_{xy}+\eta_z\tau_{xz}\\\eta_x\tau_{xy}+\eta_y\tau_{yy}+\eta_z\tau_{yz}\\\eta_x\tau_{xz}+\eta_y\tau_{yz}+\eta_z\tau_{zz}\\\eta_xb_x+\eta_yb_y+\eta_zb_z
+\hat{\boldsymbol{G}}_v=\boldsymbol{J}(\eta_x\boldsymbol{f}_v+\eta_y\boldsymbol{g}_v+\eta_z\boldsymbol{h}_v)=\boldsymbol{J}\left[\begin{array}{c}0\\\eta_x\tau_{xx}+\eta_y\tau_{xy}+\eta_z\tau_{xz}\\\eta_x\tau_{xy}+\eta_y\tau_{yy}+\eta_z\tau_{yz}\\\eta_x\tau_{xz}+\eta_y\tau_{yz}+\eta_z\tau_{zz}\\\eta_xb_x+\eta_yb_y+\eta_zb_z
 \end{array}\right]
 $$
 
 $$
-\hat{\bold{H}}_c=\bold{J}(\zeta_x\bold{f}_c+\zeta_y\bold{g}_c+\zeta_z\bold{h}_c+\zeta_t\bold{Q})=\bold{J}\left[\begin{array}{c}\rho W\\\rho uW+p\zeta_x\\\rho vW+p\zeta_y\\\rho wW+p\zeta_z\\(\rho E+p)W-p\zeta_t
+\hat{\boldsymbol{H}}_c=\boldsymbol{J}(\zeta_x\boldsymbol{f}_c+\zeta_y\boldsymbol{g}_c+\zeta_z\boldsymbol{h}_c+\zeta_t\boldsymbol{Q})=\boldsymbol{J}\left[\begin{array}{c}\rho W\\\rho uW+p\zeta_x\\\rho vW+p\zeta_y\\\rho wW+p\zeta_z\\(\rho E+p)W-p\zeta_t
 \end{array}\right]
 $$
 
 $$
-\hat{\bold{H}}_v=\bold{J}(\zeta_x\bold{f}_v+\zeta_y\bold{g}_v+\zeta_z\bold{h}_v)=\bold{J}\left[\begin{array}{c}0\\\zeta_x\tau_{xx}+\zeta_y\tau_{xy}+\zeta_z\tau_{xz}\\\zeta_x\tau_{xy}+\zeta_y\tau_{yy}+\zeta_z\tau_{yz}\\\zeta_x\tau_{xz}+\zeta_y\tau_{yz}+\zeta_z\tau_{zz}\\\zeta_xb_x+\zeta_yb_y+\zeta_zb_z
+\hat{\boldsymbol{H}}_v=\boldsymbol{J}(\zeta_x\boldsymbol{f}_v+\zeta_y\boldsymbol{g}_v+\zeta_z\boldsymbol{h}_v)=\boldsymbol{J}\left[\begin{array}{c}0\\\zeta_x\tau_{xx}+\zeta_y\tau_{xy}+\zeta_z\tau_{xz}\\\zeta_x\tau_{xy}+\zeta_y\tau_{yy}+\zeta_z\tau_{yz}\\\zeta_x\tau_{xz}+\zeta_y\tau_{yz}+\zeta_z\tau_{zz}\\\zeta_xb_x+\zeta_yb_y+\zeta_zb_z
 \end{array}\right]
 $$
 
