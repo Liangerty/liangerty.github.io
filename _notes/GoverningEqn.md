@@ -1,3 +1,12 @@
+---
+title: "Governing equations of combustion flow"
+collection: notes
+type: "Note"
+permalink: /notes/GoverningEqn
+date: 2023-06-21
+location: "Beijing, China"
+---
+
 # 燃烧控制方程推导
 
 ## N-S方程
