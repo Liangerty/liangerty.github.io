@@ -3,7 +3,7 @@ title: "Governing equations of combustion flow"
 collection: notes
 type: "Note"
 permalink: /notes/GoverningEqn
-date: 2023-06-21
+date: 2022-07-19
 location: "Beijing, China"
 ---
 
