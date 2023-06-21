@@ -18,4 +18,4 @@ My superviser is [Dr. Gao Zhenxun](http://www.ase.buaa.edu.cn/info/1079/12082.ht
 
 I major in Computational Fluid Dynamics(CFD). My research interest is in high fidelity and high efficiency simulation of  supersonic turbulent combustion.
 
-My favorite football club is Manchester City.
+My favorite football club is [Manchester City](https://www.mancity.com/).
