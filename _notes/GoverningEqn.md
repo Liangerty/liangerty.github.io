@@ -5,6 +5,10 @@ type: "Note"
 permalink: /notes/GoverningEqn
 date: 2022-07-19
 location: "Beijing, China"
+tags: 
+   - reactive flow
+   - CFD
+   - Favre average
 ---
 
 对带有化学反应流动的控制方程进行了总结，并给出了曲线坐标系下的流动控制方程，用于CFD离散
